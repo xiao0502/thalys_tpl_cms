@@ -1,7 +1,7 @@
 /*
  * @Author: 肖锦
  * @Date: 2021-06-04 09:24:03
- * @LastEditTime: 2021-06-08 14:03:18
+ * @LastEditTime: 2021-06-08 15:51:27
  * @Description: file content
  * @LastEditors: 肖锦
  */
@@ -66,7 +66,7 @@ router.beforeEach((to, from, next) => {
                                 base: environmentConfig('routeBase'),
                             }).matcher;
                             // commonRoutes需要追加到路由解析最后的404，把原先的routers.js中的404删掉即可
-                            router.addRoute(
+                            router.addRoutes(
                                 routers.concat([
                                     {
                                         path: '*',
